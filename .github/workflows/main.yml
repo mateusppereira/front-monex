@@ -19,9 +19,10 @@ jobs:
         npm run test
 
   deploy:
-    runs-on: ruby
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - uses: actions/setup-ruby@v1
     - name: Deploy on heroku
       env:
         HEROKU_APP_NAME: monex
