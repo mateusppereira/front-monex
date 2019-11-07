@@ -17,3 +17,19 @@ jobs:
     - name: Test
       run: |
         npm run test
+
+  deploy:
+    runs-on: ruby
+    steps:
+    - uses: actions/checkout@v1
+    - name: Deploy on heroku
+      env:
+        HEROKU_APP_NAME: monex
+        HEROKU_API_KEY: be772615-0ca2-4c75-93a9-6db49f577f92
+      run: |
+        apt-get update -qy
+        apt-get install rubygems ruby-dev -y
+        gem install dpl
+        npm i dpl
+        dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY --skip_cleanup
+    
