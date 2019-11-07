@@ -23,8 +23,7 @@ jobs:
         HEROKU_APP_NAME: monex
         HEROKU_API_KEY: be772615-0ca2-4c75-93a9-6db49f577f92
       run: |
-        apt-get update -qy
-        apt-get install rubygems ruby-dev -y
-        gem install dpl
-        npm i dpl
+        sudo apt-get update -qy
+        sudo apt-get install rubygems ruby-dev -y
+        sudo gem install dpl
         dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY --skip_cleanup
