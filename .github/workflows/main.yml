@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v1
     - name: Build
       run: |
         npm run build
@@ -17,6 +17,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v1
     - name: Run tests
       run: npm run test
