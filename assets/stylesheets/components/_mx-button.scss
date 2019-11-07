@@ -1,0 +1,55 @@
+.mx-button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: $font-xm;
+  font-weight: 700;
+  color: $black;
+
+  min-height: 24px;
+  padding: $space-sm $space-xl;
+  margin: $space-s;
+
+  border-radius: $border-radius;
+  border: 1px solid $secondary-darker;
+  background: $secondary;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $secondary-darker;
+  }
+
+  &--l {
+    font-size: $font-l;
+  }
+  &--s {
+    font-size: $font-s;
+  }
+
+  &--secondary {
+    background: $white;
+    border: 1px solid $primary-darker;
+    color: $primary-darker;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $primary-darker;
+      color: $white;
+    }
+  }
+
+  &--icon-left {
+    padding-left: $space-sm;
+    padding-right: $space-sm;
+
+    & > * {
+      margin-right: $space-sm;
+    }
+  }
+}

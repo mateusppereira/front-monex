@@ -1,0 +1,49 @@
+.mx-text {
+  font-size: 1.6rem;
+  
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--l {
+    font-size: 2.2rem;
+  }
+
+  &--s {
+    font-size: 1.4rem;
+  }
+
+  &--success {
+    color: $success-darker;
+  }
+
+  &--danger {
+    color: $danger-darker;
+  }
+
+  &--gray {
+    color: $gray-darker;
+  }
+}
+
+.mx-title {
+  font-size: 2.8rem; 
+  font-weight: 700;
+  margin-bottom: $space-m;
+
+  &--center {
+    text-align: center;
+  }
+
+  &--l {
+    font-size: 3.2rem;
+  }
+
+  &--s {
+    font-size: 2.4rem;
+  }
+}

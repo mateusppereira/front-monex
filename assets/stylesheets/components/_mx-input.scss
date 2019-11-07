@@ -1,0 +1,17 @@
+.mx-input {
+  height: 40px;
+  min-width: 146px;
+  width: 100%;
+
+  font-size: 1.5rem;
+  border-radius: $border-radius;
+  border: 1px solid $black;
+  background: $white;
+  outline: none;
+
+  padding: 0 $space-s;
+
+  &:focus {
+    border-color: $primary;
+  }
+}

@@ -1,0 +1,20 @@
+.mx-link {
+  font-size: $font-xm;
+  font-weight: 700;
+  color: $secondary;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $secondary-darker;
+  }
+
+  &--l {
+    font-size: $font-l;
+  }
+  &--s {
+    font-size: $font-s;
+  }
+}
